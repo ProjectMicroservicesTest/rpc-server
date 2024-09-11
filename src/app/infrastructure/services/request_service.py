@@ -10,6 +10,7 @@ class RequestsService(RequestsInterface):
         pass
 
     async def make_request(self: Self, request: RequestEntity) -> Tuple[dict, int]:
+        print(request.url)
         async with aiohttp.ClientSession() as session:
             req=getattr(session, request.method)
             async with await req(
