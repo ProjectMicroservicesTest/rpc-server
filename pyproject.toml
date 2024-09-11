@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rpc-server"
+version = "0.1.0"
+description = ""
+authors = ["NxtaSunstrike <unixalle765@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.114.0"
+faststream = {extras = ["rabbit"], version = "^0.5.23"}
+pydantic-settings = "^2.5.0"
+aiohttp = "^3.10.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
